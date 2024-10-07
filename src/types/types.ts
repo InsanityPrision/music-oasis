@@ -1,4 +1,4 @@
-type disc = {
+type Disc = {
   id: number;
   name: string;
   artistName: string;

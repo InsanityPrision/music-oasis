@@ -1,1 +1,1 @@
-const discs: disc[] = [];
+const discs: Disc[] = [];
