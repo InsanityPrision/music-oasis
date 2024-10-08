@@ -3,10 +3,10 @@ type Disc = {
   name: string;
   artistName: string;
   imageUrl: string;
-  type: string;
+  type: "digital" | "vinil";
   price: number;
   originalPrice: number;
-  isOfMonth: boolean;
+  isDiscOfTheMonth: boolean;
 };
 
 export default Disc;
