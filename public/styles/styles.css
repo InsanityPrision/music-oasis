@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: max-content;
+  margin: 0 auto;
+}
