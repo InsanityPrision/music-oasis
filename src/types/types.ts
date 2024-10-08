@@ -6,7 +6,7 @@ type Disc = {
   type: string;
   price: number;
   originalPrice: number;
-  isOfMonth: boolean;
+  isDiscOfTheMonth: boolean;
 };
 
 export default Disc;
