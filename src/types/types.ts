@@ -8,3 +8,5 @@ type Disc = {
   originalPrice: number;
   isOfMonth: boolean;
 };
+
+export default Disc;
