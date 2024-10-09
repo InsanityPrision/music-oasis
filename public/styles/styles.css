@@ -1,5 +1,6 @@
 :root {
   --line-borders: 1px solid #e6e6e6;
+  --icons-padding: 33px 25px 33px 20px;
 }
 
 * {
@@ -8,6 +9,7 @@
 
 body {
   margin: 0 auto;
+  font-family: Montserrat, sans serif;
 }
 
 .main-header {
@@ -21,12 +23,57 @@ body {
     padding: 20px;
   }
 
-  & .search {
+  & .icon {
+    display: flex;
+    align-items: center;
     border-right: var(--line-borders);
   }
 
-  & .cart {
+  & .icon-cart {
+    display: flex;
+    align-items: center;
     border-left: var(--line-borders);
+  }
+
+  & .text {
+    display: none;
+  }
+
+  @media (width > 600px) {
+    height: 90px;
+    font-weight: 600;
+
+    & img {
+      padding: 0;
+    }
+
+    & .icon {
+      height: inherit;
+      padding: var(--icons-padding);
+    }
+
+    & .icon-cart {
+      height: inherit;
+      padding: var(--icons-padding);
+    }
+
+    & .text {
+      margin-left: 10px;
+      display: flex;
+      text-transform: uppercase;
+      color: #1f2c4d;
+    }
+
+    & .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    & .brand {
+      color: #cf1e1f;
+      text-transform: uppercase;
+      margin-left: 10px;
+    }
   }
 }
 
