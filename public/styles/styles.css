@@ -61,11 +61,18 @@ body {
       margin-left: 10px;
       display: flex;
       text-transform: uppercase;
+      color: #1f2c4d;
     }
 
     & .logo {
       display: flex;
       align-items: center;
+    }
+
+    & .brand {
+      color: #cf1e1f;
+      text-transform: uppercase;
+      margin-left: 10px;
     }
   }
 }
