@@ -1,3 +1,7 @@
+:root {
+  --line-borders: 1px solid #e6e6e6;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,20 +10,22 @@ body {
   margin: 0 auto;
 }
 
-header {
+.main-header {
   display: flex;
   height: 61px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e6e6e6;
-}
+  border-bottom: var(--line-borders);
 
-header img {
-  padding: 20px;
-}
+  & img {
+    padding: 20px;
+  }
 
-header img.icon {
-  padding: 14px;
-  border-right: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
+  & .search {
+    border-right: var(--line-borders);
+  }
+
+  & .cart {
+    border-left: var(--line-borders);
+  }
 }
