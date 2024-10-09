@@ -1,9 +1,12 @@
+:root {
+  --line-borders: 1px solid #e6e6e6;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  max-width: max-content;
   margin: 0 auto;
 }
 
@@ -12,7 +15,7 @@ header {
   max-height: 61px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: var(--line-borders);
 }
 
 header img {
@@ -21,6 +24,14 @@ header img {
 
 header img.icon {
   padding: 14px 110px;
-  border-right: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
+  border-right: var(--line-borders);
+  border-left: var(--line-borders);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: var(--line-borders);
+  margin: 16px;
+  border-radius: 8px;
 }
