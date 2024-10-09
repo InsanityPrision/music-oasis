@@ -34,7 +34,7 @@ header img.icon {
   margin: 16px;
   border-radius: 8px;
 
-  @media (width > 600px) {
+  @media (width >= 600px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
