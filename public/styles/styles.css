@@ -29,3 +29,18 @@ body {
     border-left: var(--line-borders);
   }
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: var(--line-borders);
+  margin: 16px;
+  border-radius: 8px;
+
+  @media (width >= 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+}
