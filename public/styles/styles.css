@@ -1,3 +1,7 @@
+:root {
+  --line-borders: 1px solid #e6e6e6;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,17 +15,17 @@ body {
   height: 61px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: var(--line-borders);
 
   & img {
     padding: 20px;
   }
 
   & .search {
-    border-right: 1px solid #e6e6e6;
+    border-right: var(--line-borders);
   }
 
   & .cart {
-    border-left: 1px solid #e6e6e6;
+    border-left: var(--line-borders);
   }
 }
