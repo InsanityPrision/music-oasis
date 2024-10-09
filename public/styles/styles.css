@@ -44,3 +44,22 @@ body {
     gap: 16px;
   }
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  height: 502px;
+  border: var(--line-borders);
+  margin: 16px;
+  border-radius: 8px;
+
+  @media (width >= 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    height: 545px;
+    gap: 16px;
+  }
+}
