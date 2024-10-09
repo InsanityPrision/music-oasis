@@ -10,23 +10,26 @@ body {
   margin: 0 auto;
 }
 
-header {
+.main-header {
   display: flex;
-  max-height: 61px;
+  height: 61px;
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--line-borders);
+
+  & img {
+    padding: 20px;
+  }
+
+  & .search {
+    border-right: var(--line-borders);
+  }
+
+  & .cart {
+    border-left: var(--line-borders);
+  }
 }
 
-header img {
-  padding: 20px 20px;
-}
-
-header img.icon {
-  padding: 14px 110px;
-  border-right: var(--line-borders);
-  border-left: var(--line-borders);
-}
 .container {
   display: flex;
   flex-direction: column;
