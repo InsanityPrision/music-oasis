@@ -90,3 +90,17 @@ body {
     padding: 60px 149px;
   }
 }
+
+.disc-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+
+  @media (width >= 600px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1185px;
+  }
+}
