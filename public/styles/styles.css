@@ -85,34 +85,9 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  border: var(--line-borders);
-  margin: 16px;
-  border-radius: 8px;
+  padding: 45px 16px;
 
   @media (width >= 600px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 149px;
-    gap: 16px;
-  }
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 343px;
-  height: 502px;
-  border: var(--line-borders);
-  margin: 16px;
-  border-radius: 8px;
-
-  @media (width >= 600px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 375px;
-    height: 545px;
-    gap: 16px;
+    padding: 60px 149px;
   }
 }
