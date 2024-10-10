@@ -34,9 +34,14 @@ body {
   }
 
   & .icon-cart {
+    background-color: inherit;
+    border: 0;
+    font-family: inherit;
+    font-weight: inherit;
     display: flex;
     align-items: center;
     border-left: var(--line-borders);
+    cursor: pointer;
   }
 
   & .icon-text {
