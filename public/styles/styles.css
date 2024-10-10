@@ -25,8 +25,7 @@ body {
     align-items: center;
     border-right: var(--line-borders);
 
-    @media (width >= 600) {
-      height: inherit;
+    @media (width >= 600px) {
       padding: var(--icons-padding);
     }
   }
