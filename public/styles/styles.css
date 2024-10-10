@@ -95,6 +95,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 
   @media (width >= 600px) {
@@ -102,5 +103,19 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start;
     max-width: 1185px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: var(--line-borders);
+  border-radius: 8px;
+  height: 502px;
+  width: 343px;
+
+  @media (width >= 600px) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
