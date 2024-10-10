@@ -19,22 +19,49 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--line-borders);
+  cursor: default;
 
   .icon {
     padding: 20px;
     display: flex;
     align-items: center;
     border-right: var(--line-borders);
+    gap: 10px;
 
     @media (width >= 600px) {
       padding: var(--icons-padding);
     }
   }
 
+  .search {
+    display: none;
+    cursor: text;
+
+    ::placeholder {
+      color: inherit;
+    }
+
+    @media (width >= 600px) {
+      display: flex;
+      background-color: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      color: inherit;
+      text-transform: uppercase;
+      border: 0;
+      width: 80px;
+    }
+  }
+
+  .search::placeholder {
+    color: inherit;
+  }
+
   .brand-text {
     display: none;
 
     @media (width >= 600px) {
+      font-size: medium;
       display: flex;
       color: #cf1e1f;
       text-transform: uppercase;
@@ -52,6 +79,7 @@ body {
     align-items: center;
     border-left: var(--line-borders);
     text-decoration: none;
+    cursor: pointer;
 
     @media (width >= 600px) {
       color: inherit;
@@ -67,11 +95,10 @@ body {
       margin-left: 10px;
       display: flex;
       text-transform: uppercase;
-      color: inherit;
     }
   }
 
-  @media (width > 600px) {
+  @media (width >= 600px) {
     height: 90px;
     font-weight: 600;
 
