@@ -19,11 +19,8 @@ body {
   align-items: center;
   border-bottom: var(--line-borders);
 
-  & img {
+  .icon {
     padding: 20px;
-  }
-
-  & .icon {
     display: flex;
     align-items: center;
     border-right: var(--line-borders);
@@ -33,7 +30,8 @@ body {
     display: none;
   }
 
-  & .icon-cart {
+  .icon-cart {
+    padding: 20px;
     background-color: inherit;
     border: 0;
     font-family: inherit;
@@ -44,7 +42,7 @@ body {
     cursor: pointer;
   }
 
-  & .icon-text {
+  .icon-text {
     display: none;
   }
 
@@ -52,33 +50,33 @@ body {
     height: 90px;
     font-weight: 600;
 
-    & img {
+    .icon-img {
       padding: 0;
     }
 
-    & .icon {
+    .icon {
       height: inherit;
       padding: var(--icons-padding);
     }
 
-    & .icon-cart {
+    .icon-cart {
       height: inherit;
       padding: var(--icons-padding);
     }
 
-    & .icon-text {
+    .icon-text {
       margin-left: 10px;
       display: flex;
       text-transform: uppercase;
       color: #1f2c4d;
     }
 
-    & .logo {
+    .logo {
       display: flex;
       align-items: center;
     }
 
-    & .brand-text {
+    .brand-text {
       display: flex;
       color: #cf1e1f;
       text-transform: uppercase;
