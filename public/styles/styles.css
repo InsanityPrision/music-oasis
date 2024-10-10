@@ -51,7 +51,7 @@ body {
     display: flex;
     align-items: center;
     border-left: var(--line-borders);
-    cursor: pointer;
+    text-decoration: none;
 
     @media (width >= 600px) {
       height: inherit;
