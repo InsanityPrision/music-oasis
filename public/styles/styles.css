@@ -29,13 +29,17 @@ body {
     border-right: var(--line-borders);
   }
 
+  .brand-text {
+    display: none;
+  }
+
   & .icon-cart {
     display: flex;
     align-items: center;
     border-left: var(--line-borders);
   }
 
-  & .text {
+  & .icon-text {
     display: none;
   }
 
@@ -57,7 +61,7 @@ body {
       padding: var(--icons-padding);
     }
 
-    & .text {
+    & .icon-text {
       margin-left: 10px;
       display: flex;
       text-transform: uppercase;
@@ -69,7 +73,8 @@ body {
       align-items: center;
     }
 
-    & .brand {
+    & .brand-text {
+      display: flex;
       color: #cf1e1f;
       text-transform: uppercase;
       margin-left: 10px;
