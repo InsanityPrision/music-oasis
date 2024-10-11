@@ -19,42 +19,17 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--line-borders);
-  cursor: default;
 
   .icon {
     padding: 20px;
     display: flex;
     align-items: center;
     border-right: var(--line-borders);
-    gap: 10px;
+    cursor: pointer;
 
     @media (width >= 600px) {
       padding: var(--icons-padding);
     }
-  }
-
-  .search {
-    display: none;
-    cursor: text;
-
-    ::placeholder {
-      color: inherit;
-    }
-
-    @media (width >= 600px) {
-      display: flex;
-      background-color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      color: inherit;
-      text-transform: uppercase;
-      border: 0;
-      width: 80px;
-    }
-  }
-
-  .search::placeholder {
-    color: inherit;
   }
 
   .brand-text {
@@ -73,8 +48,7 @@ body {
     padding: 20px;
     background-color: inherit;
     border: 0;
-    font-family: inherit;
-    font-weight: inherit;
+    font: inherit;
     display: flex;
     align-items: center;
     border-left: var(--line-borders);
