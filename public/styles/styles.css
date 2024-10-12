@@ -110,17 +110,51 @@ ul {
 .disc-card {
   border: var(--line-borders);
   border-radius: 8px;
-}
+  height: 502px;
+  width: 343px;
+  position: relative;
 
-.disc-card img {
-  width: 100%;
-  height: auto;
-}
+  @media (width >= 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.card-title {
-  display: none;
-}
+  .type {
+    display: inline-block;
+    margin-left: 16px;
+    color: #09b272;
+    background-color: #e7f8f1;
+    width: 105px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 7px 27px;
+    font-size: 14px;
 
-.disc-list li {
-  list-style: none;
+    @media (width >= 600px) {
+      position: absolute;
+      bottom: 188px;
+      right: 20px;
+    }
+  }
+
+  .discount {
+    display: inline-block;
+    color: #cf1e1f;
+    background-color: #fbe9e9;
+    width: 105px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 7px 14px;
+    font-size: 14px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+    @media (width >= 600px) {
+      top: 24px;
+      left: 24px;
+    }
+  }
 }
