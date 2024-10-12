@@ -20,6 +20,11 @@ body {
   align-items: center;
   border-bottom: var(--line-borders);
 
+  button {
+    border: 0;
+    font: inherit;
+  }
+
   > :nth-child(1) {
     border-right: var(--line-borders);
   }
@@ -35,6 +40,7 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    background-color: inherit;
 
     @media (width >= 600px) {
       padding: var(--icons-padding);
