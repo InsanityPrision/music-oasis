@@ -160,3 +160,19 @@ ul {
   width: 100%;
   height: auto;
 }
+
+.disc-card-title {
+  font-weight: 600;
+  line-height: 22px;
+  font-size: 18px;
+  margin-block: 16px 32px;
+  margin-inline: 16px;
+  padding-bottom: 10px;
+
+  @media (width >= 600px) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-block: 16px 12px;
+    margin-inline: 24px;
+  }
+}
