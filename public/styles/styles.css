@@ -160,4 +160,19 @@ body {
     padding: 7px 27px;
     font-size: 14px;
   }
+
+  .discount {
+    display: inline-block;
+    color: #cf1e1f;
+    background-color: #fbe9e9;
+    width: 105px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 7px 14px;
+    font-size: 14px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
 }
