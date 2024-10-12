@@ -171,6 +171,24 @@ ul {
       font: inherit;
       font-weight: bold;
     }
+
+    .favorite {
+      background: inherit;
+      border: 0;
+    }
+
+    .icon-disc {
+      background-color: inherit;
+      border: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 24px;
+      font: inherit;
+      text-transform: uppercase;
+      font-weight: bold;
+      gap: 10px;
+    }
   }
 }
 
