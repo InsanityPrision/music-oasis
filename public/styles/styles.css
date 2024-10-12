@@ -89,6 +89,30 @@ ul {
   @media (width >= 600px) {
     padding: 60px 149px 47px 112px;
   }
+
+  .filter-menu {
+    margin-top: 45px;
+    display: flex;
+    gap: 15px;
+
+    .filter-menu-button {
+      font: inherit;
+      border: 0;
+      background-color: inherit;
+      font-weight: bold;
+      position: relative;
+      padding: 0px;
+    }
+
+    .filter-menu-button:focus::after {
+      content: "";
+      border-bottom: 3px solid #cf1e1f;
+      position: absolute;
+      bottom: -5px;
+      left: 0px;
+      right: 0px;
+    }
+  }
 }
 
 .disc-list {
