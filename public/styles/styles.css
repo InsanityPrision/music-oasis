@@ -135,8 +135,6 @@ body {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   border: var(--line-borders);
   border-radius: 8px;
   height: 502px;
@@ -159,6 +157,12 @@ body {
     font-weight: bold;
     padding: 7px 27px;
     font-size: 14px;
+
+    @media (width >= 600px) {
+      position: absolute;
+      bottom: 188px;
+      right: 20px;
+    }
   }
 
   .discount {
@@ -174,5 +178,10 @@ body {
     position: absolute;
     top: 16px;
     left: 16px;
+
+    @media (width >= 600px) {
+      top: 24px;
+      left: 24px;
+    }
   }
 }
