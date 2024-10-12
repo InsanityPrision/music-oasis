@@ -158,7 +158,6 @@ ul {
   .icons-button {
     display: flex;
     justify-content: flex-start;
-    height: 24px;
     margin: 14px 16px 18px 16px;
     gap: 20px;
 
