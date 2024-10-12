@@ -154,6 +154,24 @@ ul {
       left: 24px;
     }
   }
+
+  .icons-button {
+    display: flex;
+    justify-content: flex-start;
+    height: 24px;
+    margin: 14px 16px 18px 16px;
+    gap: 20px;
+
+    @media (width >= 600px) {
+      margin: 12px 24px 45px 24px;
+    }
+
+    .price {
+      flex: 1;
+      font: inherit;
+      font-weight: bold;
+    }
+  }
 }
 
 .disc-card img {
