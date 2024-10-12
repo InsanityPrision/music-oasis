@@ -107,6 +107,10 @@ ul {
   }
 }
 
+.disc-list li {
+  list-style: none;
+}
+
 .disc-card {
   border: var(--line-borders);
   border-radius: 8px;
