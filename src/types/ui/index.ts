@@ -3,7 +3,10 @@ import Disc from "../types";
 export const renderRecordCard = (
   record: Disc,
   recordCard: HTMLElement
-): void => {};
+): void => {
+  const element = recordCard.querySelector(".disc-card-title")!;
+  element.textContent = `${record.name} (${record.artistName})`;
+};
 
 export const renderRecordsList = (records: Disc[]): void => {
   const recordsList = document.querySelector(".records")!;
