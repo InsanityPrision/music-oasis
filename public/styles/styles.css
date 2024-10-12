@@ -147,3 +147,11 @@ body {
     justify-content: space-between;
   }
 }
+
+.card-title {
+  display: none;
+}
+
+.disc-list li {
+  list-style: none;
+}
