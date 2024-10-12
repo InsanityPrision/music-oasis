@@ -141,9 +141,23 @@ body {
   border-radius: 8px;
   height: 502px;
   width: 343px;
+  position: relative;
 
   @media (width >= 600px) {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .type {
+    display: inline-block;
+    margin-left: 16px;
+    color: #09b272;
+    background-color: #e7f8f1;
+    width: 105px;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 7px 27px;
+    font-size: 14px;
   }
 }
