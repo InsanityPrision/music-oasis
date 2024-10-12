@@ -16,23 +16,31 @@
 
 <body>
   <header class="main-header">
-    <div class="icon"> <img class="icon-search" src="images/search.svg" alt=""> <input class="search" type="search"
-        placeholder="Search"></div>
-    <div class="logo"><img src="images/symbol.svg" alt="Music Oasis logo"><span class="brand-text">
+    <button class="icon"> <img src="images/search.svg" alt="Open search menu" width="20" height="20"><span
+        class="icon-text">Search</span>
+    </button>
+    <div class="logo"><img src="images/symbol.svg" alt="Music Oasis logo" width="32" height="32"><span
+        class="brand-text">
         Music </span>
       <span class="icon-text">Oasis</span>
     </div>
-    <a class="icon-cart"><img src="images/cart.svg" alt="Shopping cart icon"> <span class="icon-text">Cart</span>
+    <a class="icon" href="checkout"><img src="images/cart.svg" alt="Shopping cart icon"><span
+        class="icon-text">Cart</span>
+    </a>
     </a>
   </header>
   <main class="main-container">
-    <div class="disc-list">
-      <div class="card">
-        <div><img class="disc-cover-container" src="images/disc.png" alt="Disc cover"></div>
-        <div class="type">Vinyl</div>
-        <div class="discount">Discount</div>
-      </div>
-    </div>
+    <ul class="disc-list">
+      <li>
+        <article class="disc-card">
+          <img src="images/disc_image.jpg" alt="The Rolling Stones del disco Bridges to Babylon" width="343"
+            height="343">
+          <h2 class="card-title">Prueba</h2>
+          <div class="type">Vinyl</div>
+          <div class="discount">Discount</div>
+        </article>
+      </li>
+    </ul>
   </main>
 </body>
 

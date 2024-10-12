@@ -9,8 +9,12 @@
 
 body {
   margin: 0 auto;
-  font-family: Montserrat, sans serif;
+  font-family: Montserrat, sans-serif;
   color: #1f2c4d;
+}
+
+ul {
+  padding-inline: 0;
 }
 
 .main-header {
@@ -19,42 +23,32 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--line-borders);
-  cursor: default;
+
+  button {
+    border: 0;
+    font: inherit;
+  }
+
+  > :nth-child(1) {
+    border-right: var(--line-borders);
+  }
+
+  > :nth-child(3) {
+    border-left: var(--line-borders);
+    text-decoration: none;
+    color: inherit;
+  }
 
   .icon {
     padding: 20px;
     display: flex;
     align-items: center;
-    border-right: var(--line-borders);
-    gap: 10px;
+    cursor: pointer;
+    background-color: inherit;
 
     @media (width >= 600px) {
       padding: var(--icons-padding);
     }
-  }
-
-  .search {
-    display: none;
-    cursor: text;
-
-    ::placeholder {
-      color: inherit;
-    }
-
-    @media (width >= 600px) {
-      display: flex;
-      background-color: inherit;
-      font-family: inherit;
-      font-weight: inherit;
-      color: inherit;
-      text-transform: uppercase;
-      border: 0;
-      width: 80px;
-    }
-  }
-
-  .search::placeholder {
-    color: inherit;
   }
 
   .brand-text {
@@ -66,25 +60,6 @@ body {
       color: #cf1e1f;
       text-transform: uppercase;
       margin-left: 10px;
-    }
-  }
-
-  .icon-cart {
-    padding: 20px;
-    background-color: inherit;
-    border: 0;
-    font-family: inherit;
-    font-weight: inherit;
-    display: flex;
-    align-items: center;
-    border-left: var(--line-borders);
-    text-decoration: none;
-    cursor: pointer;
-
-    @media (width >= 600px) {
-      color: inherit;
-      height: inherit;
-      padding: var(--icons-padding);
     }
   }
 
@@ -110,19 +85,18 @@ body {
 }
 
 .main-container {
-  display: flex;
-  flex-direction: column;
-  padding: 45px 16px;
+  padding: 0 16px;
 
   @media (width >= 600px) {
-    padding: 60px 149px;
+    max-width: 1185px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
 .disc-list {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 10px;
 
@@ -130,11 +104,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 1185px;
   }
 }
 
-.card {
+.disc-card {
   border: var(--line-borders);
   border-radius: 8px;
   height: 502px;
