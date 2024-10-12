@@ -20,11 +20,20 @@ body {
   align-items: center;
   border-bottom: var(--line-borders);
 
+  > :nth-child(1) {
+    border-right: var(--line-borders);
+  }
+
+  > :nth-child(3) {
+    border-left: var(--line-borders);
+    text-decoration: none;
+    color: inherit;
+  }
+
   .icon {
     padding: 20px;
     display: flex;
     align-items: center;
-    border-right: var(--line-borders);
     cursor: pointer;
 
     @media (width >= 600px) {
@@ -41,24 +50,6 @@ body {
       color: #cf1e1f;
       text-transform: uppercase;
       margin-left: 10px;
-    }
-  }
-
-  .icon-cart {
-    padding: 20px;
-    background-color: inherit;
-    border: 0;
-    font: inherit;
-    display: flex;
-    align-items: center;
-    border-left: var(--line-borders);
-    text-decoration: none;
-    cursor: pointer;
-
-    @media (width >= 600px) {
-      color: inherit;
-      height: inherit;
-      padding: var(--icons-padding);
     }
   }
 
