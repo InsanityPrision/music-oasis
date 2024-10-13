@@ -4,6 +4,9 @@ export const renderRecordCard = (
   record: Disc,
   recordCard: HTMLElement
 ): void => {
+  const recordCover = recordCard.querySelector(".cover") as HTMLImageElement;
+  recordCover.src = record.imageUrl;
+
   const element = recordCard.querySelector(".album-and-artist-info")!;
   element.textContent = `${record.name} (${record.artistName})`;
 
