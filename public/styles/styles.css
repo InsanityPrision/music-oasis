@@ -103,6 +103,7 @@ ul {
     max-width: 1185px;
   }
 }
+
 .disc-list li {
   list-style: none;
 }
@@ -196,7 +197,7 @@ ul {
   height: auto;
 }
 
-.disc-card-title {
+.album-and-artist-info {
   font-weight: 600;
   line-height: 22px;
   font-size: 18px;
