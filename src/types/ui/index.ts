@@ -38,6 +38,7 @@ export const renderRecordCard = (
       originalPrice.textContent = `$${record.originalPrice}`;
     } else {
       originalPrice.remove();
+      recordCard.querySelector(".discount")?.remove();
     }
   }
 };
