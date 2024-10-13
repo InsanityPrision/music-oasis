@@ -4,10 +4,27 @@ export const renderRecordCard = (
   record: Disc,
   recordCard: HTMLElement
 ): void => {
+  const recordCover = recordCard.querySelector(".cover") as HTMLImageElement;
+  recordCover.src = record.imageUrl;
+
   const element = recordCard.querySelector(".album-and-artist-info")!;
   element.textContent = `${record.name} (${record.artistName})`;
 
-  const price = recordCard.querySelector(".price");
+  const price = recordCard.querySelector(".price")!;
+  price.textContent = `$${record.price}`;
+
+  if (record.type === "Digital") {
+    const type = recordCard.querySelector(".type")!;
+    type.textContent = `${record.type}`;
+    const vinylType = recordCard.querySelector(".vinyl");
+    vinylType?.remove();
+  } else {
+    const type = recordCard.querySelector(".type")!;
+    type.textContent = `${record.type}`;
+    const digitalType = recordCard.querySelector(".digital");
+    digitalType?.remove();
+  }
+
   if (price) {
     price.textContent = `$${record.price}`;
     if (record.price < record.originalPrice) {
