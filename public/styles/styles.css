@@ -55,7 +55,7 @@ ul {
     display: none;
 
     @media (width >= 600px) {
-      font-size: medium;
+      font-size: inherit;
       display: flex;
       color: #cf1e1f;
       text-transform: uppercase;
@@ -169,17 +169,20 @@ ul {
     width: 375px;
   }
 
-  .type {
+  .button {
     display: inline-block;
+    padding: 0px 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border-radius: 3px;
+  }
+
+  .type {
     margin-left: 16px;
     color: #09b272;
     background-color: #e7f8f1;
-    width: 105px;
-    text-align: center;
-    border-radius: 3px;
-    font-weight: bold;
     padding: 7px 27px;
-    font-size: 14px;
 
     @media (width >= 600px) {
       position: absolute;
@@ -189,15 +192,9 @@ ul {
   }
 
   .discount {
-    display: inline-block;
     color: #cf1e1f;
     background-color: #fbe9e9;
-    width: 105px;
-    text-align: center;
-    border-radius: 3px;
-    font-weight: bold;
     padding: 7px 14px;
-    font-size: 14px;
     position: absolute;
     top: 16px;
     left: 16px;
@@ -252,13 +249,13 @@ ul {
 .album-and-artist-info {
   font-weight: 600;
   line-height: 22px;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-block: 16px 32px;
   margin-inline: 16px;
   padding-bottom: 10px;
 
   @media (width >= 600px) {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 24px;
     margin-block: 16px 12px;
     margin-inline: 24px;
