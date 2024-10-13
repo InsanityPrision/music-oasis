@@ -1,16 +1,19 @@
-import Disc from "../types";
+import Disc from "../types.js";
 
 export const renderRecordCard = (
   record: Disc,
   recordCard: HTMLElement
 ): void => {
-  const element = recordCard.querySelector(".disc-card-title")!;
+  const element = recordCard.querySelector(".album-and-artist-info")!;
   element.textContent = `${record.name} (${record.artistName})`;
+
+  const price = recordCard.querySelector(".price")!;
+  price.textContent = `$${record.price}`;
 };
 
 export const renderRecordsList = (records: Disc[]): void => {
-  const recordsList = document.querySelector(".records")!;
-  const dummyRecord = recordsList.querySelector(".record")!;
+  const recordsList = document.querySelector(".disc-list")!;
+  const dummyRecord = recordsList.querySelector(".disc-card")!;
   recordsList.innerHTML = "";
 
   records.forEach((record) => {
