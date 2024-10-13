@@ -219,6 +219,18 @@ ul {
       flex: 1;
       font: inherit;
       font-weight: bold;
+      position: relative;
+    }
+
+    .original-price {
+      font: inherit;
+      display: block;
+      justify-content: flex-start;
+      font-size: 1rem;
+      color: #6b7999;
+      text-decoration: line-through;
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
 
     .favorite {
@@ -260,4 +272,8 @@ ul {
     margin-block: 16px 12px;
     margin-inline: 24px;
   }
+}
+
+.price-discount {
+  color: #cf1e1f;
 }

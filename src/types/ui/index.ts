@@ -7,8 +7,22 @@ export const renderRecordCard = (
   const element = recordCard.querySelector(".album-and-artist-info")!;
   element.textContent = `${record.name} (${record.artistName})`;
 
-  const price = recordCard.querySelector(".price")!;
-  price.textContent = `$${record.price}`;
+  const price = recordCard.querySelector(".price");
+  if (price) {
+    price.textContent = `$${record.price}`;
+    if (record.price < record.originalPrice) {
+      price.classList.add("price-discount");
+    }
+  }
+
+  const originalPrice = recordCard.querySelector(".original-price");
+  if (originalPrice) {
+    if (record.price < record.originalPrice) {
+      originalPrice.textContent = `$${record.originalPrice}`;
+    } else {
+      originalPrice.remove();
+    }
+  }
 };
 
 export const renderRecordsList = (records: Disc[]): void => {
