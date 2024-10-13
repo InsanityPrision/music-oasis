@@ -208,8 +208,9 @@ ul {
   .icons-button {
     display: flex;
     justify-content: flex-start;
-    margin: 14px 16px 18px 16px;
+    margin: 14px 16px 40px 16px;
     gap: 20px;
+    align-items: center;
 
     @media (width >= 600px) {
       margin: 12px 24px 45px 24px;
@@ -219,6 +220,17 @@ ul {
       flex: 1;
       font: inherit;
       font-weight: bold;
+      position: relative;
+    }
+
+    .original-price {
+      font: inherit;
+      display: block;
+      position: absolute;
+      font-size: 1rem;
+      color: #6b7999;
+      text-decoration: line-through;
+      margin-top: 50px;
     }
 
     .favorite {
@@ -235,7 +247,6 @@ ul {
       height: 24px;
       font: inherit;
       text-transform: uppercase;
-      font-weight: bold;
       gap: 10px;
     }
   }
@@ -260,4 +271,8 @@ ul {
     margin-block: 16px 12px;
     margin-inline: 24px;
   }
+}
+
+.price-discount {
+  color: #cf1e1f;
 }

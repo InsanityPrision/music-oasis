@@ -24,6 +24,22 @@ export const renderRecordCard = (
     const digitalType = recordCard.querySelector(".digital");
     digitalType?.remove();
   }
+
+  if (price) {
+    price.textContent = `$${record.price}`;
+    if (record.price < record.originalPrice) {
+      price.classList.add("price-discount");
+    }
+  }
+
+  const originalPrice = recordCard.querySelector(".original-price");
+  if (originalPrice) {
+    if (record.price < record.originalPrice) {
+      originalPrice.textContent = `$${record.originalPrice}`;
+    } else {
+      originalPrice.remove();
+    }
+  }
 };
 
 export const renderRecordsList = (records: Disc[]): void => {
