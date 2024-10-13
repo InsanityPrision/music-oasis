@@ -116,7 +116,6 @@ ul {
     }
 
     .filter-menu-button {
-      display: inline-flex;
       font: inherit;
       border: 0;
       background-color: inherit;
