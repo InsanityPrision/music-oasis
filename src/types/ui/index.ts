@@ -9,6 +9,18 @@ export const renderRecordCard = (
 
   const price = recordCard.querySelector(".price")!;
   price.textContent = `$${record.price}`;
+
+  if (record.type === "Digital") {
+    const type = recordCard.querySelector(".type")!;
+    type.textContent = `${record.type}`;
+    const vinylType = recordCard.querySelector(".vinyl");
+    vinylType?.remove();
+  } else {
+    const type = recordCard.querySelector(".type")!;
+    type.textContent = `${record.type}`;
+    const digitalType = recordCard.querySelector(".digital");
+    digitalType?.remove();
+  }
 };
 
 export const renderRecordsList = (records: Disc[]): void => {
