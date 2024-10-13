@@ -89,6 +89,57 @@ ul {
   @media (width >= 600px) {
     padding: 60px 149px 47px 112px;
   }
+
+  .filter-menu {
+    @media (width >= 600px) {
+      margin: 45px 0px;
+      height: 40px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .main-header {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 45px;
+      border: 0;
+      font-size: 1.75rem;
+
+      @media (width >= 600px) {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px;
+        height: 40px;
+        flex: 1;
+      }
+    }
+
+    .filter-menu-button {
+      font: inherit;
+      border: 0;
+      background-color: inherit;
+      font-weight: bold;
+      position: relative;
+      padding: 0px;
+      margin-right: 15px;
+      margin-bottom: 45px;
+      font-size: 1.125rem;
+
+      @media (width >= 600px) {
+        margin-bottom: 0;
+      }
+    }
+
+    .filter-menu-button:focus::after {
+      content: "";
+      border-bottom: 3px solid #cf1e1f;
+      position: absolute;
+      bottom: -5px;
+      left: 0px;
+      right: 0px;
+    }
+  }
 }
 
 .disc-list {
