@@ -1,4 +1,4 @@
-import Disc from "../types";
+import Disc from "../types.js";
 
 export const renderRecordCard = (
   record: Disc,
@@ -24,12 +24,13 @@ export const renderRecordCard = (
 };
 
 export const renderRecordsList = (records: Disc[]): void => {
-  const recordsList = document.querySelector(".records")!;
-  const dummyRecord = recordsList.querySelector(".record")!;
+  const recordsList = document.querySelector(".disc-list")!;
+  const dummyRecord = recordsList.querySelector(".disc-card")!;
   recordsList.innerHTML = "";
 
   records.forEach((record) => {
     const newRecordCard = dummyRecord.cloneNode(true) as HTMLElement;
+    debugger;
     renderRecordCard(record, newRecordCard);
     recordsList.appendChild(newRecordCard);
   });
