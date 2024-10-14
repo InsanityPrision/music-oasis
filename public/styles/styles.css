@@ -27,6 +27,7 @@ ul {
   button {
     border: 0;
     font: inherit;
+    color: inherit;
   }
 
   > :nth-child(1) {
@@ -126,6 +127,7 @@ ul {
       margin-right: 15px;
       margin-bottom: 45px;
       font-size: 1.125rem;
+      color: inherit;
 
       @media (width >= 600px) {
         margin-bottom: 0;
@@ -248,6 +250,7 @@ ul {
       font: inherit;
       text-transform: uppercase;
       gap: 10px;
+      color: inherit;
     }
   }
 }
