@@ -9,6 +9,7 @@ export const renderRecordCard = (
 
   const element = recordCard.querySelector(".album-and-artist-info")!;
   element.textContent = `${record.name} (${record.artistName})`;
+  recordCover.alt = `${record.name} (${record.artistName})`;
 
   const price = recordCard.querySelector(".price")!;
   price.textContent = `$${record.price}`;
